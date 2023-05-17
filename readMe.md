@@ -32,7 +32,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Usage
 1. Connect your rooted Google Pixel 5 mobile device to your local machine and enable USB debugging.
-2. Run the Explorer module to monitor and record app activity and sensitive API access.
+2. Run the Trigger module to monitor and record app activity and sensitive API access.
    ```sh
    cd Trigger
    python trigger.py
