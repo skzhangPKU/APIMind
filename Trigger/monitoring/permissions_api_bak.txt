@@ -1,0 +1,399 @@
+android.accounts.AccountManager,getAccountsByType|Lists all accounts of particular type visible to the caller.
+android.media.AudioRecord,startRecording|Starts recording from the AudioRecord instance when the specified synchronization event occurs on the specified audio session.
+android.media.MediaRecorder,start|Start recoding. Begins capturing and encoding data to the file specified with setOutputFile(). Call this after prepare().
+android.media.MediaRecorder,stop|Stops recording. Call this after start(). Once recording is stopped, you will have to configure it again as if it has just been constructed.
+andriod.harware.Camera,takePicture|Triggers an asynchronous image capture.
+andriod.harware.Camera,setPreviewCallback|Installs a callback to be invoked for every preview frame in addition to displaying them on the screen.
+andriod.harware.Camera,setPreviewCallbackWithBuffer|Installs a callback to be invoked for every preview frame, using buffers supplied, in addition to displaying them on the screen.
+andriod.harware.Camera,setOneShotPreviewCallback|Installs a callback to be invoked for the next preview frame in addition to displaying it on the screen.
+android.app.admin.DevicePolicyManager,getWifiMacAddress|Called by device owner, or profile owner on organization-owned device, to get the MAC address of the Wi-Fi device.
+android.bluetooth.BluetoothA2dp,getConnectedDevices|Get connected devices for this specific profile.
+android.bluetooth.BluetoothA2dp,getConnectionState|Get the current connection state of the profile.
+android.bluetooth.BluetoothAdapter,getAddress|Returns the hardware address of the local Bluetooth adapter.
+android.bluetooth.BluetoothAdapter,getBluetoothLeScanner|Returns a BluetoothLeScanner object for Bluetooth low energy scan operations.
+android.bluetooth.BluetoothAdapter,getBondedDevices|Return the set of Bluetooth Device objects that are bonded (paired) to the local adapter.
+android.bluetooth.BluetoothAdapter,getName|Get the friendly Bluetooth name of the local Bluetooth adapter.
+android.bluetooth.BluetoothAdapter,getProfileConnectionState|Get the current connection state of a profile. This function can be used to check whether the local Bluetooth adapter is connected to any remote device for a specific profile.
+android.bluetooth.BluetoothAdapter,getState|Get the current state of the local Bluetooth adapter.
+android.bluetooth.BluetoothDevice,connectGatt|Connect to generic attribute server hosted by this device.
+android.bluetooth.BluetoothDevice,fetchUuidsWithSdp|Perform a service discovery on the remote device to get the UUIDs supported.
+android.bluetooth.BluetoothDevice,getBluetoothClass|Get the Bluetooth class of the remote device.
+android.bluetooth.BluetoothDevice,getName|Get the friendly Bluetooth name of the remote device.
+android.bluetooth.BluetoothDevice,getType|Get the Bluetooth device type of the remote device.
+android.bluetooth.BluetoothDevice,getUuids|Returns the supported features (UUIDs) of the remote device.
+android.bluetooth.BluetoothGatt,readDescriptor|Reads the value for a given descriptor from the associated remote device.
+android.bluetooth.BluetoothGatt,readRemoteRssi|Read the received signal strength indicator Received signal strength indication (RSSI) for a connected remote device.
+android.bluetooth.BluetoothGattServer,sendResponse|Send a response to a read or write request to a remote device. This function must be invoked in when a remote read or write request is received by one of these callback methods
+android.bluetooth.BluetoothHeadset,getConnectedDevices|Get connected devices for this specific profile.
+android.bluetooth.BluetoothHeadset,getConnectionState|Get the current connection state of the profile.
+android.bluetooth.BluetoothHeadset,getDevicesMatchingConnectionStates|Get a list of devices that match any of the given connection states.
+android.bluetooth.BluetoothHeadset,startVoiceRecognition|Start Bluetooth voice recognition. This methods sends the voice recognition AT command to the headset and establishes the audio connection.
+android.bluetooth.BluetoothHeadset,stopVoiceRecognition|Stop Bluetooth Voice Recognition mode, and shut down the Bluetooth audio path.
+android.bluetooth.BluetoothHealth,getConnectedDevices|Get connected devices for the health profile.
+android.bluetooth.BluetoothHealth,getConnectionState|Get the current connection state of the profile. This is not specific to any application configuration but represents the connection state of the local Bluetooth adapter with the remote device. This can be used by applications like status bar which would just like to know the state of the local adapter.
+android.location.LocationManager,addGpsStatusListener|Adds a GPS status listener.
+android.location.LocationManager,getBestProvider|Returns the name of the provider that best meets the given criteria. Only providers that are permitted to be accessed by the caller will be returned. If several providers meet the criteria, the one with the best accuracy is returned. If no provider meets the criteria, the criteria are loosened in the following order.
+android.location.LocationManager,getLastKnownLocation|Gets the last known location from the given provider, or null if there is no last known location. The returned location may be quite old in some circumstances, so the age of the location should always be checked. This will never activate sensors to compute a new location, and will only ever return a cached location.
+android.location.LocationManager,getProviders|Returns a list of the names of available location providers.
+android.location.LocationManager,registerGnssStatusCallback|Registers a global navigation satellite system status callback.
+android.location.LocationManager,requestLocationUpdates|Register for location updates from the given provider with the given arguments, and a callback on the Looper of the calling thread.
+android.location.LocationManager,requestSingleUpdate|Register for a single location update using a named provider and pending intent.
+android.net.ConnectivityManager,getActiveNetwork|Returns a Network object corresponding to the currently active default data network. In the event that the current active default data network disconnects, the returned Network object will no longer be usable. This will return null when there is no default network, or when the default network is blocked.
+android.net.ConnectivityManager,getActiveNetworkInfo|Returns details about the currently active default data network. When connected, this network is the default route for outgoing connections.
+android.net.ConnectivityManager,getAllNetworkInfo|Returns connection status information about all network types supported by the device.
+android.net.ConnectivityManager,getAllNetworks|Returns an array of all Network currently tracked by the framework.
+android.net.ConnectivityManager,getLinkProperties|Get the link properties for the given Network. This will return null if the network is unknown.
+android.net.ConnectivityManager,getNetworkCapabilities|Get the network capabilities for the given Network, or null. This will remove any location sensitive data in the returned NetworkCapabilities.
+android.net.ConnectivityManager,getNetworkInfo|Returns connection status information about a particular network type.
+android.net.ConnectivityManager,getRestrictBackgroundStatus|Determines if the calling application is subject to metered network restrictions while running on background.
+android.net.sip.SipAudioCall,startAudio|Starts the audio for the established call.
+android.net.sip.SipManager,makeAudioCall|Creates a SipAudioCall to make a call. The attempt will be timed out if the call is not established within timeout seconds.
+android.net.sip.SipManager,takeAudioCall|Creates a SipAudioCall to take an incoming call. Before the call is returned, the listener will receive a onRinging callback.
+android.net.wifi.WifiManager,getConfiguredNetworks|Return a list of all the networks configured for the current foreground user. Not all fields of WifiConfiguration are returned.
+android.net.wifi.WifiManager,getConnectionInfo|Return dynamic information about the current Wi-Fi connection, if any is active.
+android.net.wifi.WifiManager,getDhcpInfo|Return the DHCP-assigned addresses from the last successful DHCP request, if any.
+android.net.wifi.WifiManager,getScanResults|Return the results of the latest access point scan.
+android.net.wifi.WifiManager,getWifiState|Gets the Wi-Fi enabled state.
+android.net.wifi.WifiManager,is5GHzBandSupported|Check if the chip set supports 5GHz band.
+android.net.wifi.WifiManager,isDeviceToApRttSupported|True if this adapter supports round trip time from device to access point.
+android.net.wifi.WifiManager,isEnhancedPowerReportingSupported|True if this adapter supports advanced power/performance counters.
+android.net.wifi.WifiManager,startScan|Request a scan for access points. Returns immediately. The availability of the results is made known later by means of an asynchronous event sent on completion of the scan.
+android.security.KeyChain,getCertificateChain|Returns a digital certificate chain for the requested alias, or null if the alias does not exist or the caller has no permission to access it. If a certificate chain was explicitly specified when the alias was installed, this method will return that chain. If only the client certificate was specified at the installation time, this method will try to build a certificate chain using all available trust anchors.
+android.security.KeyChain,getPrivateKey|Returns the private key for the requested alias, or null if the alias does not exist or the caller has no permission to access it (see note on exceptions below). This method may block while waiting for a connection to another process, and must never be called from the main thread.
+android.speech.tts.TextToSpeech,getLanguage|Returns a locale instance describing the language currently being used for synthesis requests sent to the TextToSpeech engine. In Android 4.2 and before this function returns the language that is currently being used by the TTS engine.
+android.speech.tts.TextToSpeech,getVoice|Returns a Voice instance describing the voice currently being used for synthesis requests sent to the TextToSpeech engine.
+android.speech.tts.TextToSpeech,getVoices|Query the engine about the set of available voices. Each text-to-speech Engine can expose multiple voices for each locale, each with a different set of features.
+android.speech.tts.TextToSpeech,isSpeaking|Checks whether the text-to-speech engine is busy speaking. Note that a speech item is considered complete once it's audio data has been sent to the audio mixer, or written to a file. There might be a finite lag between this point, and when the audio hardware completes playback.
+android.speech.tts.TextToSpeech,playEarcon|Plays the earcon using the specified queueing mode and parameters. This method is asynchronous, i.e. the method just adds the request to the queue of text-to-speech requests and then returns. The synthesis might not have finished (or even started!) at the time when this method returns. In order to reliably detect errors during synthesis, we recommend setting an utterance progress listener.
+android.speech.tts.TextToSpeech,playSilence|Plays silence for the specified amount of time using the specified queue mode. This method is asynchronous, i.e. the method just adds the request to the queue of text-to-speech requests and then returns. The synthesis might not have finished (or even started!) at the time when this method returns. In order to reliably detect errors during synthesis, we recommend setting an utterance progress listener.
+android.speech.tts.TextToSpeech,playSilentUtterance|Plays silence for the specified amount of time using the specified queue mode. This method is asynchronous, i.e. the method just adds the request to the queue of text-to-speech requests and then returns. The synthesis might not have finished (or even started!) at the time when this method returns. In order to reliably detect errors during synthesis, we recommend setting an utterance progress listener.
+android.speech.tts.TextToSpeech,setLanguage|Sets the text-to-speech language. The text-to-speech engine will try to use the closest match to the specified language as represented by the Locale, but there is no guarantee that the exact same Locale will be used.
+android.speech.tts.TextToSpeech,setVoice|Sets the text-to-speech voice.
+android.speech.tts.TextToSpeech,shutdown|Releases the resources used by the text-to-speech engine. It is good practice for instance to call this method in the onDestroy() method of an Activity so the TextToSpeech engine can be cleanly stopped.
+android.speech.tts.TextToSpeech,speak|Speaks the text using the specified queuing strategy and speech parameters, the text may be spanned with TtsSpans. This method is asynchronous, i.e. the method just adds the request to the queue of TTS requests and then returns. The synthesis might not have finished (or even started!) at the time when this method returns. In order to reliably detect errors during synthesis, we recommend setting an utterance progress listener.
+android.speech.tts.TextToSpeech,stop|Interrupts the current utterance (whether played or rendered to file) and discards other utterances in the queue.
+android.speech.tts.TextToSpeech,synthesizeToFile|Synthesizes the given text to a ParcelFileDescriptor using the specified parameters. This method is asynchronous, i.e. the method just adds the request to the queue of TTS requests and then returns. The synthesis might not have finished (or even started!) at the time when this method returns. In order to reliably detect errors during synthesis, we recommend setting an utterance progress listener.
+android.telephony.SmsManager,sendDataMessage|Send a data based short message service to a specific application port.
+android.telephony.SmsManager,sendMultimediaMessage|Send an multimedia messaging service message.
+android.telephony.SmsManager,sendMultipartTextMessage|Send a multi-part text based short message service.
+android.telephony.SmsManager,sendTextMessage|Send a text based short message service.
+android.telephony.TelephonyManager,getAllCellInfo|Requests all available cell information from all radios on the device including the camped/registered, serving, and neighboring cells.
+android.telephony.TelephonyManager,getCellLocation|Requests all available cell information from all radios on the device including the camped/registered, serving, and neighboring cells.
+android.telephony.TelephonyManager,getDeviceId|Returns the IMEI (International Mobile Equipment Identity). Return null if IMEI is not available.
+android.telephony.TelephonyManager,getGroupIdLevel1|Returns the group identifier Level1 for a GSM phone.
+android.telephony.TelephonyManager,getIccAuthentication|Returns the response of authentication for the default subscription.
+android.telephony.TelephonyManager,getLine1Number|Returns the phone number for the given subId, or an empty string if not available. This API is suitable for general apps that needs to know the phone number.
+android.telephony.TelephonyManager,getNeighboringCellInfo|Get the neighboring cell information, including Received Signal Strength and Cell ID location.
+android.telephony.TelephonyManager,getPhoneCount|Returns the number of logical modems currently configured to be activated. Returns 0 if none of voice, sms, data is not supported Returns 1 for Single standby mode (Single SIM functionality). Returns 2 for Dual standby mode (Dual SIM functionality). Returns 3 for Tri standby mode (Tri SIM functionality).
+android.telephony.TelephonyManager,getSimSerialNumber|Returns the serial number of the Subscriber Identity Module, if applicable. Return null if it is unavailable.
+android.telephony.TelephonyManager,getSimState|Returns a constant indicating the state of the default Subscriber Identity Module card.
+android.telephony.TelephonyManager,getSimOperator|Returns the mobile country code and mobile network code of the provider of the Subscriber Identity Module. 5 or 6 decimal digits.
+android.telephony.TelephonyManager,getNetworkOperator|Returns the numeric name (mobile country code and mobile network code) of current registered operator.
+android.telephony.TelephonyManager,getSubscriberId|Returns the unique subscriber ID, for example, the international mobile subscriber identity for a GSM phone. Return null if it is unavailable.
+android.telephony.TelephonyManager,getVoiceMailAlphaTag|Retrieves the alphabetic identifier associated with the voice mail number.
+android.telephony.TelephonyManager,getVoiceMailNumber|Returns the voice mail number. Return null if it is unavailable.
+android.telephony.gsm.SmsManager,sendDataMessage|Send a data based SMS to a specific application port.
+android.telephony.gsm.SmsManager,sendMultipartTextMessage|Send a multi-part text based SMS. The callee should have already divided the message into correctly sized parts by calling divideMessage.
+android.telephony.gsm.SmsManager,sendTextMessage|Send a text based SMS.
+android.hardware.location.ContextHubService,sendMessage|Send a message to a specific nano app instance on a context hub. Note that the return value of this method only speaks of success up to the point of sending this to the Context Hub.  It is not an assurance that the Context Hub successfully sent this message on to the nanoapp.  If assurance is desired, a protocol should be established between your code and the nanoapp, with the nanoapp sending a confirmation message (which will be reported via Callback.onMessageReceipt).
+com.android.bluetooth.a2dp.A2dpService$BluetoothA2dpBinder,getConnectedDevices| Get connected bluetooth devices.
+com.android.bluetooth.a2dp.A2dpService$BluetoothA2dpBinder,getConnectionState| Check whether can connect to a peer device. The check considers the maximum number of connected peers.
+com.android.bluetooth.a2dpsink.A2dpSinkService$BluetoothA2dpSinkBinder,getConnectedDevices| Get connected bluetooth devices.
+com.android.bluetooth.a2dpsink.A2dpSinkService$BluetoothA2dpSinkBinder,getConnectionState| Get the connection state of the connected bluetooth device.
+com.android.bluetooth.a2dpsink.A2dpSinkService$BluetoothA2dpSinkBinder,getPriority| Get the priority of the bluetooth device.
+com.android.bluetooth.avrcp.AvrcpControllerService$BluetoothAvrcpControllerBinder,getConnectedDevices|Get connected bluetooth devices.
+com.android.bluetooth.avrcp.AvrcpControllerService$BluetoothAvrcpControllerBinder,getConnectionState|Check whether can connect to a peer device. The check considers the maximum number of connected peers.
+com.android.bluetooth.avrcp.AvrcpControllerService$BluetoothAvrcpControllerBinder,getDevicesMatchingConnectionStates| Get a list of devices that match any of the given connection states.
+com.android.bluetooth.avrcp.AvrcpControllerService$BluetoothAvrcpControllerBinder,getMetadata| Get current meta data of the bluetooth device.
+com.android.bluetooth.avrcp.AvrcpControllerService$BluetoothAvrcpControllerBinder,getPlaybackState| Get current play back state of the bluetooth device.
+com.android.bluetooth.avrcp.AvrcpControllerService$BluetoothAvrcpControllerBinder,getPlayerSettings| Get current player app setting of the bluetooth device.
+com.android.bluetooth.avrcp.AvrcpControllerService$BluetoothAvrcpControllerBinder,sendGroupNavigationCmd| Send Group Navigation Command to Remote.
+com.android.bluetooth.btservice.AdapterService$AdapterServiceBinder,getAddress| Get the hardware address of the local Bluetooth adapter.
+com.android.bluetooth.btservice.AdapterService$AdapterServiceBinder,getBondState|  Get the bond state of a particular Bluetooth device.
+com.android.bluetooth.btservice.AdapterService$AdapterServiceBinder,getBondedDevices| Get bonded devices being called.
+com.android.bluetooth.btservice.AdapterService$AdapterServiceBinder,getConnectionState| Get adapter connection state.
+com.android.bluetooth.btservice.AdapterService$AdapterServiceBinder,getDiscoverableTimeout| Get the duration of the discoverable timeout.
+com.android.bluetooth.btservice.AdapterService$AdapterServiceBinder,getMessageAccessPermission| Gets whether message access is allowed to this bluetooth device
+com.android.bluetooth.btservice.AdapterService$AdapterServiceBinder,getName| Get the friendly Bluetooth name of the remote device.
+com.android.bluetooth.btservice.AdapterService$AdapterServiceBinder,getPhonebookAccessPermission| Gets whether the phonebook access is allowed for this bluetooth device.
+com.android.bluetooth.btservice.AdapterService$AdapterServiceBinder,getProfileConnectionState| Returns the connection state for the given Bluetooth profile.
+com.android.bluetooth.btservice.AdapterService$AdapterServiceBinder,getRemoteAlias|  Get the locally modifiable name (alias) of the remote Bluetooth device.
+com.android.bluetooth.btservice.AdapterService$AdapterServiceBinder,getRemoteClass| Get the class of the remote Bluetooth device.
+com.android.bluetooth.btservice.AdapterService$AdapterServiceBinder,getRemoteName| Get the name of the remote Bluetooth device.
+com.android.bluetooth.btservice.AdapterService$AdapterServiceBinder,getRemoteType| Get the type of the remote bluetooth device.
+com.android.bluetooth.btservice.AdapterService$AdapterServiceBinder,getRemoteUuids| Get uuids of the remote bluetooth device.
+com.android.bluetooth.btservice.AdapterService$AdapterServiceBinder,getScanMode| Get the current Bluetooth scan mode of the local Bluetooth adapter.
+com.android.bluetooth.btservice.AdapterService$AdapterServiceBinder,getSimAccessPermission| Gets whether sim access is allowed for this bluetooth device
+com.android.bluetooth.btservice.AdapterService$AdapterServiceBinder,getState| Get the state of the bluetooth adapter.
+com.android.bluetooth.btservice.AdapterService$AdapterServiceBinder,getUuids| Get the uuids of the bluetooth device.
+com.android.bluetooth.btservice.AdapterService$AdapterServiceBinder,setMessageAccessPermission| Sets whether the message access is allowed to this device.
+com.android.bluetooth.hfp.HeadsetService$BluetoothHeadsetBinder,getConnectedDevices| Get connected bluetooth headset devices.
+com.android.bluetooth.hfp.HeadsetService$BluetoothHeadsetBinder,getConnectionState| Get connection state of the headset.
+com.android.bluetooth.hfp.HeadsetService$BluetoothHeadsetBinder,getDevicesMatchingConnectionStates| Get a list of headset devices that match any of the given connection states.
+com.android.bluetooth.hfp.HeadsetService$BluetoothHeadsetBinder,startVoiceRecognition|Start bluetooth voice recognition of the headset.
+com.android.bluetooth.hfp.HeadsetService$BluetoothHeadsetBinder,stopVoiceRecognition| Stop voice recognition of the headset.
+com.android.bluetooth.hfpclient.HeadsetClientService$BluetoothHeadsetClientBinder,acceptCall| Phonecalls from a single device are supported, hang up any calls on the other phone.
+com.android.bluetooth.hfpclient.HeadsetClientService$BluetoothHeadsetClientBinder,getConnectedDevices| Get connected devices for the health profile.
+com.android.bluetooth.hfpclient.HeadsetClientService$BluetoothHeadsetClientBinder,getConnectionState| Get connection state of the bluetooth device.
+com.android.bluetooth.hfpclient.HeadsetClientService$BluetoothHeadsetClientBinder,getCurrentAgEvents| Get current ag events of the bluetooth device.
+com.android.bluetooth.hfpclient.HeadsetClientService$BluetoothHeadsetClientBinder,getCurrentAgFeatures| Get current ag features of the bluetooth device.
+com.android.bluetooth.hfpclient.HeadsetClientService$BluetoothHeadsetClientBinder,getCurrentCalls| Get current calls of the bluetooth headset.
+com.android.bluetooth.hfpclient.HeadsetClientService$BluetoothHeadsetClientBinder,getDevicesMatchingConnectionStates| Get a list of devices that match any of the given connection states.
+com.android.bluetooth.hfpclient.HeadsetClientService$BluetoothHeadsetClientBinder,startVoiceRecognition| Start bluetooth headset voice recognition.
+com.android.bluetooth.hfpclient.HeadsetClientService$BluetoothHeadsetClientBinder,stopVoiceRecognition| Stop Bluetooth headset Voice Recognition mode, and shut down the Bluetooth headset audio path.
+com.android.bluetooth.hfpclient.HeadsetClientService$BluetoothHeadsetClientBinder,terminateCall| Terminate call of the bluetooth headset.
+com.android.bluetooth.hid.HidService$BluetoothInputDeviceBinder,connect| Connect the bluetooth service.
+com.android.bluetooth.hid.HidService$BluetoothInputDeviceBinder,disconnect| Disconnect the bluetooth service.
+com.android.bluetooth.hid.HidService$BluetoothInputDeviceBinder,getConnectedDevices| Get connected devices for the health profile.
+com.android.bluetooth.hid.HidService$BluetoothInputDeviceBinder,getDevicesMatchingConnectionStates|Get a list of devices that match any of the given connection states.
+com.android.bluetooth.map.BluetoothMapService$BluetoothMapBinder,getConnectedDevices|Get connected devices for the health profile.
+com.android.bluetooth.map.BluetoothMapService$BluetoothMapBinder,getConnectionState|Get the connection state of the connected bluetooth device.
+com.android.bluetooth.map.BluetoothMapService$BluetoothMapBinder,getDevicesMatchingConnectionStates|Get a list of devices that match any of the given connection states.
+com.android.bluetooth.map.BluetoothMapService$BluetoothMapBinder,getState| Get the current state of the bluetooth device.
+com.android.bluetooth.pbapclient.PbapClientService$BluetoothPbapClientBinder,getConnectedDevices|Get connected devices for the health profile.
+com.android.bluetooth.pbapclient.PbapClientService$BluetoothPbapClientBinder,getConnectionState|Get the connection state of the connected bluetooth device.
+com.android.bluetooth.pbapclient.PbapClientService$BluetoothPbapClientBinder,getDevicesMatchingConnectionStates|Get a list of devices that match any of the given connection states.
+com.android.bluetooth.pbapclient.PbapClientService$BluetoothPbapClientBinder,getPriority| Get the priority of the bluetooth device.
+com.android.bluetooth.sap.SapService$SapBinder,getClient| Get the remote bluetooth device.
+com.android.bluetooth.sap.SapService$SapBinder,getConnectedDevices| Get connected devices for the health profile.
+com.android.bluetooth.sap.SapService$SapBinder,getConnectionState|Get the connection state of the connected bluetooth device.
+com.android.bluetooth.sap.SapService$SapBinder,getDevicesMatchingConnectionStates|Get a list of devices that match any of the given connection states.
+com.android.internal.telephony.PhoneSubInfoController,getCompleteVoiceMailNumber| Retrieves the complete voice mail number.
+com.android.internal.telephony.PhoneSubInfoController,getCompleteVoiceMailNumberForSubscriber| Get complete voice mail number for subscriber.
+com.android.internal.telephony.PhoneSubInfoController,getDeviceId| Retrieves the unique device ID, e.g., IMEI for GSM phones and MEID for CDMA phones.
+com.android.internal.telephony.PhoneSubInfoController,getDeviceIdForPhone|Retrieves the unique device ID, e.g., IMEI for GSM phones and MEID for CDMA phones.
+com.android.internal.telephony.PhoneSubInfoController,getDeviceSvn| Retrieves the software version number for the device, e.g., IMEI/SV for GSM phones
+com.android.internal.telephony.PhoneSubInfoController,getDeviceSvnUsingSubId| Retrieves the software version number for the device using subscriber id, e.g., IMEI/SV for GSM phones.
+com.android.internal.telephony.PhoneSubInfoController,getGroupIdLevel1| Retrieves the Group Identifier Level1 for GSM phones.
+com.android.internal.telephony.PhoneSubInfoController,getGroupIdLevel1ForSubscriber| Retrieves the Group Identifier Level1 for GSM phones of a subId.
+com.android.internal.telephony.PhoneSubInfoController,getIccSerialNumber| Retrieves the serial number of the ICC, if applicable.
+com.android.internal.telephony.PhoneSubInfoController,getIccSerialNumberForSubscriber| Retrieves the serial number of the ICC for subscriber, if applicable.
+com.android.internal.telephony.PhoneSubInfoController,getIccSimChallengeResponse| Returns the response of the SIM application on the UICC to authentication challenge/response algorithm.
+com.android.internal.telephony.PhoneSubInfoController,getImeiForSubscriber| Retrieves the IMEI for subscriber.
+com.android.internal.telephony.PhoneSubInfoController,getIsimChallengeResponse| Returns the response of ISIM Authetification through RIL.
+com.android.internal.telephony.PhoneSubInfoController,getIsimDomain| Returns the IMS home network domain name that was loaded from the ISIM.
+com.android.internal.telephony.PhoneSubInfoController,getIsimImpi| Returns the IMS private user identity (IMPI) that was loaded from the ISIM.
+com.android.internal.telephony.PhoneSubInfoController,getIsimImpu| Returns the IMS public user identities (IMPU) that were loaded from the ISIM.
+com.android.internal.telephony.PhoneSubInfoController,getIsimIst| Returns the IMS Service Table (IST) that was loaded from the ISIM.
+com.android.internal.telephony.PhoneSubInfoController,getIsimPcscf| Returns the IMS Proxy Call Session Control Function(PCSCF) that were loaded from the ISIM.
+com.android.internal.telephony.PhoneSubInfoController,getLine1AlphaTag| Retrieves the alpha identifier for line 1.
+com.android.internal.telephony.PhoneSubInfoController,getLine1AlphaTagForSubscriber| Retrieves the alpha identifier for line 1 of a subscriber Id.
+com.android.internal.telephony.PhoneSubInfoController,getLine1Number| Retrieves the phone number string for line 1.
+com.android.internal.telephony.PhoneSubInfoController,getLine1NumberForSubscriber|Retrieves the phone number string for line 1 of a subscription.
+com.android.internal.telephony.PhoneSubInfoController,getMsisdn| Retrieves MSISDN Number.
+com.android.internal.telephony.PhoneSubInfoController,getMsisdnForSubscriber| Retrieves the Msisdn of a subscriber Id.
+com.android.internal.telephony.PhoneSubInfoController,getNaiForSubscriber| Retrieves the unique Network Access ID.
+com.android.internal.telephony.PhoneSubInfoController,getSubscriberId| Retrieves the unique subscriber ID, e.g., IMSI for GSM phones.
+com.android.internal.telephony.PhoneSubInfoController,getSubscriberIdForSubscriber| Retrieves the unique subscriber ID of a given subId, e.g., IMSI for GSM phones.
+com.android.internal.telephony.PhoneSubInfoController,getVoiceMailAlphaTag| Retrieves the alpha identifier associated with the voice mail number.
+com.android.internal.telephony.PhoneSubInfoController,getVoiceMailAlphaTagForSubscriber| Retrieves the alpha identifier associated with the voice mail number of a subId.
+com.android.internal.telephony.PhoneSubInfoController,getVoiceMailNumber| Retrieves the voice mail number.
+com.android.internal.telephony.PhoneSubInfoController,getVoiceMailNumberForSubscriber| Retrieves the voice mail number of a given subscriber ID.
+com.android.internal.telephony.SubscriptionController,getActiveSubInfoCount| Returns the current number of active subscriptions.
+com.android.internal.telephony.SubscriptionController,getActiveSubscriptionInfo| Get the active Subscription Information with the input subscriber ID.
+com.android.internal.telephony.SubscriptionController,getActiveSubscriptionInfoForIccId| Get the active Subscription Information associated with the iccId.
+com.android.internal.telephony.SubscriptionController,getActiveSubscriptionInfoForSimSlotIndex| Get the active SubscriptionInfo associated with the slotIdx.
+com.android.internal.telephony.SubscriptionController,getActiveSubscriptionInfoList| Get the Subscription Information of the currently inserted SIM(s).
+com.android.internal.telephony.SubscriptionController,getAllSubInfoCount| The count of all subscriptions in the database, this includes all subscriptions that have been seen.
+com.android.internal.telephony.SubscriptionController,getAllSubInfoList| Get all the Subscription Information Records in Subscription information database
+com.android.internal.telephony.SubscriptionController,getSubscriptionProperty| Store properties associated with Subscription Information in database.
+com.android.internal.telephony.UiccPhoneBookController,getAdnRecordsInEfForSubscriber| Loads the AdnRecords in efid and returns them as a List of AdnRecords.
+com.android.internal.telephony.UiccSmsController,copyMessageToIccEfForSubscriber| Send a data SMS to the ICC for subscriber.
+com.android.internal.telephony.UiccSmsController,enableCellBroadcastForSubscriber| Disable reception of cell broadcast (SMS-CB) messages with the given message identifier and RAN type. The RAN type specify this message ID belong to 3GPP (GSM) or 3GPP2(CDMA). Note that if two different clients enable the same message identifier, they must both disable it for the device to stop receiving those messages.
+com.android.internal.telephony.UiccSmsController,enableCellBroadcastRangeForSubscriber| Disable reception of cell broadcast (SMS-CB) messages with the given message identifier range and RAN type. The RAN type specify this message ID range belong to 3GPP (GSM) or 3GPP2(CDMA). Note that if two different clients enable a message identifier range, they must both disable it for the device to stop receiving those messages.
+com.android.internal.telephony.UiccSmsController,getAllMessagesFromIccEfForSubscriber| Update the specified message on the ICC.
+com.android.internal.telephony.UiccSmsController,sendMultipartTextForSubscriber| Send a multi-part text based SMS with options using subscriber ID.
+com.android.internal.telephony.UiccSmsController,sendStoredMultipartText| Send a system stored multi-part text message.
+com.android.internal.telephony.UiccSmsController,sendStoredText| Send a system stored text message.
+com.android.phone.CarrierConfigLoader,getConfigForSubId| Gets the configuration values for a particular subscription, which is associated with a specific SIM card. If an invalid subId is used, the returned config will contain default values.
+com.android.phone.PhoneInterfaceManager,call| Place a call to the specified number.
+com.android.phone.PhoneInterfaceManager,disableDataConnectivity|Disallow mobile data connections.
+com.android.phone.PhoneInterfaceManager,disableLocationUpdates|This method was removed due to potential issues caused by performing partial updates of service state, and lack of a credible use case.
+com.android.phone.PhoneInterfaceManager,disableLocationUpdatesForSubscriber| Disable location update notifications for subscriber.
+com.android.phone.PhoneInterfaceManager,enableDataConnectivity| Enable data connectivity.
+com.android.phone.PhoneInterfaceManager,enableVideoCalling| Enables or Disables Video Calling.
+com.android.phone.PhoneInterfaceManager,getAidForAppType| Return the application ID for the app type.
+com.android.phone.PhoneInterfaceManager,getAllCellInfo| Requests all available cell information from all radios on the device including the camped/registered, serving, and neighboring cells.
+com.android.phone.PhoneInterfaceManager,getAllowedCarriers| Get the allowed carrier list and the excluded carrier list, including the priority between the two lists. Require system privileges. In the future we may add this to carrier APIs.
+com.android.phone.PhoneInterfaceManager,getCalculatedPreferredNetworkType| Get the calculated preferred network type. Used for debugging incorrect network type.
+com.android.phone.PhoneInterfaceManager,getCdmaEriIconIndex| Returns the Code-Division Multiple Access (CDMA) ERI icon index to display.
+com.android.phone.PhoneInterfaceManager,getCdmaEriIconIndexForSubscriber| Returns the Code-Division Multiple Access (CDMA) ERI icon index to display for subscriber.
+com.android.phone.PhoneInterfaceManager,getCdmaEriIconMode| Returns the Code-Division Multiple Access (CDMA) ERI icon mode.
+com.android.phone.PhoneInterfaceManager,getCdmaEriIconModeForSubscriber| Returns the Code-Division Multiple Access (CDMA) ERI icon mode for subscriber.
+com.android.phone.PhoneInterfaceManager,getCdmaEriText| Returns the Code-Division Multiple Access (CDMA) ERI text.
+com.android.phone.PhoneInterfaceManager,getCdmaEriTextForSubscriber| Returns the Code-Division Multiple Access (CDMA) ERI text for subscriber.
+com.android.phone.PhoneInterfaceManager,getCdmaMdn| Returns the Code-Division Multiple Access (CDMA) MDN.
+com.android.phone.PhoneInterfaceManager,getCdmaMin| Returns the Code-Division Multiple Access (CDMA) MIN.
+com.android.phone.PhoneInterfaceManager,getCdmaPrlVersion| Return the Preferred Roaming List Version.
+com.android.phone.PhoneInterfaceManager,getCellLocation| Returns the current location of the device.
+com.android.phone.PhoneInterfaceManager,getCellNetworkScanResults| Get scan results for available networks.
+com.android.phone.PhoneInterfaceManager,getDataEnabled| Get whether mobile data is enabled.
+com.android.phone.PhoneInterfaceManager,getDataNetworkType| Get the current network type reported by the network service..
+com.android.phone.PhoneInterfaceManager,getDataNetworkTypeForSubscriber| Get the data network type for subscriber.
+com.android.phone.PhoneInterfaceManager,getDeviceId| Get the device Id.
+com.android.phone.PhoneInterfaceManager,getDeviceSoftwareVersionForSlot| Returns the software version number for the device, for example, the IMEI/SV for GSM phones. Return null if the software version is not available.
+com.android.phone.PhoneInterfaceManager,getEsn| Return the Electronic Serial Number.
+com.android.phone.PhoneInterfaceManager,getImeiForSlot| Returns the IMEI (International Mobile Equipment Identity) for slot.
+com.android.phone.PhoneInterfaceManager,getLine1AlphaTagForDisplay| Returns the alphabetic identifier associated with the line 1 number for a subscription.
+com.android.phone.PhoneInterfaceManager,getLine1NumberForDisplay| Returns the phone number string for line 1, for example, the MSISDN for a GSM phone for a particular subscription.
+com.android.phone.PhoneInterfaceManager,getLteOnCdmaMode| Return if the current radio is LTE on Code-Division Multiple Access (CDMA).
+com.android.phone.PhoneInterfaceManager,getLteOnCdmaModeForSubscriber| Return if the current radio is LTE on Code-Division Multiple Access (CDMA) for Subscription.
+com.android.phone.PhoneInterfaceManager,getMergedSubscriberIds| Return the set of subscriber IDs that should be considered as "merged together" for data usage purposes.
+com.android.phone.PhoneInterfaceManager,getNeighboringCellInfo| Returns the neighboring cell information of the device.
+com.android.phone.PhoneInterfaceManager,getNetworkTypeForSubscriber| Returns a constant indicating the radio technology (network type) currently in use on the device for a subscription.
+com.android.phone.PhoneInterfaceManager,getPcscfAddress| Get P-CSCF address from PCO after data connection is established or modified.
+com.android.phone.PhoneInterfaceManager,getPreferredNetworkType| Get the preferred network type. Used for device configuration by some Code-Division Multiple Access (CDMA) operators.
+com.android.phone.PhoneInterfaceManager,getRadioAccessFamily| Get radio access family.
+com.android.phone.PhoneInterfaceManager,getServiceStateForSubscriber| Returns the service state information on specified subscription. Callers require either READ_PRIVILEGED_PHONE_STATE or READ_PHONE_STATE to retrieve the information.
+com.android.phone.PhoneInterfaceManager,getSystemVisualVoicemailSmsFilterSettings| Sets the originating number whitelist for the visual voice mail SMS filter of a phone account. If the list is not null only the SMS messages from a number in the list can be considered as a visual voicemail SMS. Otherwise, messages from any address will be considered.
+com.android.phone.PhoneInterfaceManager,getTelephonyHistograms| Get snapshot of Telephony histograms.
+com.android.phone.PhoneInterfaceManager,getTetherApnRequired| Check TETHER_DUN_REQUIRED and TETHER_DUN_APN settings, net.tethering.noprovisioning SystemProperty, and config_tether_apndata to decide whether DUN APN is required for tethering.
+com.android.phone.PhoneInterfaceManager,getVoiceNetworkTypeForSubscriber| Returns the network type for voice for a subscriber.
+com.android.phone.PhoneInterfaceManager,getVtDataUsage| Get aggregated video call data usage since boot.
+com.android.phone.PhoneInterfaceManager,sendEnvelopeWithStatus| Send ENVELOPE to the subscriber identity module (SIM) and return the response.
+com.android.phone.PhoneInterfaceManager,setAllowedCarriers| Set list of allowed carriers.
+com.android.phone.PhoneInterfaceManager,setDataEnabled| Turns mobile data on or off.
+com.android.phone.PhoneInterfaceManager,setImsRegistrationState|Set IP Multimedia Subsystem (IMS) registration state.
+com.android.phone.PhoneInterfaceManager,setNetworkSelectionModeAutomatic| Sets the network selection mode to automatic.
+com.android.phone.PhoneInterfaceManager,setNetworkSelectionModeManual| Ask the radio to connect to the input network and change selection mode to manual.
+com.android.phone.PhoneInterfaceManager,setPolicyDataEnabled| Policy control of data connection. Usually used when data limit is passed.
+com.android.phone.PhoneInterfaceManager,setPreferredNetworkType| Set the preferred network type. Used for device configuration by some Code-Division Multiple Access (CDMA) operators.
+com.android.phone.PhoneInterfaceManager,setRadio| Set the radio to on or off.
+com.android.phone.PhoneInterfaceManager,setRadioForSubscriber| Set the radio to on or off on particular subId.
+com.android.phone.PhoneInterfaceManager,setRadioPower| Set the radio to on or off unconditionally.
+com.android.phone.PhoneInterfaceManager,setVisualVoicemailEnabled| Enables or disables the visual voice mail client for a phone account.
+com.android.phone.PhoneInterfaceManager,toggleRadioOnOff| Toggles the radio on or off.
+com.android.phone.PhoneInterfaceManager,toggleRadioOnOffForSubscriber| Toggles the radio on or off on particular subscriber Id.
+com.android.server.BluetoothManagerService,getAddress| Get the address of the bluetooth.
+com.android.server.BluetoothManagerService,getName| Get name of the bluetooth.
+com.android.server.BluetoothManagerService,registerStateChangeCallback| Register state change callback.
+com.android.server.ConnectivityService,getActiveLinkProperties| Return LinkProperties for the active (i.e., connected) default network interface.  It is assumed that at most one default network is active at a time. If more than one is active, it is indeterminate which will be returned.
+com.android.server.ConnectivityService,getActiveNetwork| Returns a Network object corresponding to the currently active default data network.
+com.android.server.ConnectivityService,getActiveNetworkForUid| Return a Network object corresponding to the currently active default data network for a specific UID.
+com.android.server.ConnectivityService,getActiveNetworkInfo| Return NetworkInfo for the active (i.e., connected) network interface. It is assumed that at most one network is active at a time. If more than one is active, it is indeterminate which will be returned.
+com.android.server.ConnectivityService,getActiveNetworkInfoForUid| Returns details about the currently active default data network for a given uid.
+com.android.server.ConnectivityService,getActiveNetworkQuotaInfo| Returns an array of Network capabilities objects, representing the Networks that applications run by the given user will use by default.
+com.android.server.ConnectivityService,getAllNetworkInfo| Returns connection status information about all network types supported by the device.
+com.android.server.ConnectivityService,getAllNetworks| Returns an array of all Network currently tracked by the framework.
+com.android.server.ConnectivityService,getDefaultNetworkCapabilitiesForUser| Returns an array of Network Capabilities objects, representing the Networks that applications run by the given user will use by default.
+com.android.server.ConnectivityService,getLastTetherError| Get a more detailed error code after a Tethering or Untethering request asynchronously failed.
+com.android.server.ConnectivityService,getLinkProperties| Returns the IP information for a given network type.
+com.android.server.ConnectivityService,getLinkPropertiesForType| Returns the IP information for a given network type.
+com.android.server.ConnectivityService,getNetworkCapabilities| Get the network capabilities for the given network.
+com.android.server.ConnectivityService,getNetworkForType| Get the network object currently serving a given type, or null if the given type is not connected.
+com.android.server.ConnectivityService,getNetworkInfo| Returns connection status information about a particular network type.
+com.android.server.ConnectivityService,getNetworkInfoForUid| Returns connection status information about a particular Network.
+com.android.server.ConnectivityService,getTetherableBluetoothRegexs| Get the list of regular expressions that define any tetherable Bluetooth network interfaces.
+com.android.server.ConnectivityService,getTetherableIfaces| Get the set of tetherable, available interfaces.
+com.android.server.ConnectivityService,getTetherableUsbRegexs| Get the list of regular expressions that define any tetherable USB network interfaces.
+com.android.server.ConnectivityService,getTetherableWifiRegexs| Get the list of regular expressions that define any tetherable Wifi network interfaces.
+com.android.server.ConnectivityService,getTetheredDhcpRanges| Get the set of tethered Dynamic Host Configuration Protocol (DHCP) ranges.
+com.android.server.LocationManagerService,getBestProvider| Return the name of the best provider given a Criteria object.
+com.android.server.LocationManagerService,getLastLocation| Get the last location from the provider.
+com.android.server.LocationManagerService,getProviderProperties| Returns the properties of the given provider, or null if the properties are currently unknown.
+com.android.server.LocationManagerService,getProviders| Returns a list of the names of available location providers.
+com.android.server.LocationManagerService,requestLocationUpdates| Register for location updates from the given provider with the given arguments.
+com.android.server.MmsServiceBroker$BinderService,sendMessage| Send message by calling package.
+com.android.server.MountService,encryptStorage| Encrypt storage.
+com.android.server.MountService,fixPermissionsSecureContainer| Fix permissions secure container.
+com.android.server.MountService,getField| Get a field from the crypto header.
+com.android.server.MountService,getPassword| Get the password.
+com.android.server.MountService,getPasswordType|  Get the type of encryption used to encrypt the master key.
+com.android.server.NetworkManagementService,enableNat| Enables Network Address Translation between two interfaces. The address and netmask of the external interface is used for the NAT'ed network.
+com.android.server.NetworkManagementService,getDnsForwarders| Returns the list of domain name system (DNS) forwarders (in order of priority).
+com.android.server.NetworkManagementService,getInterfaceConfig| Retrieve the specified interface config.
+com.android.server.NetworkManagementService,getIpForwardingEnabled| Return true if IP forwarding is enabled.
+com.android.server.NetworkManagementService,getNetworkStatsDetail| Return detailed network statistics with UID-level granularity, including interface and tag details.
+com.android.server.NetworkManagementService,getNetworkStatsSummaryDev| Return global network statistics summarized at an interface level, without any UID-level granularity.
+com.android.server.NetworkManagementService,getNetworkStatsSummaryXt| Return global network statistics summarized at an interface level.
+com.android.server.NetworkManagementService,getNetworkStatsTethering| Return summary of network statistics all tethering interfaces.
+com.android.server.NetworkManagementService,getNetworkStatsUidDetail| Return detailed network statistics for the requested UID and interfaces, including interface and tag details.
+com.android.server.am.BatteryStatsService,noteBleScanStarted| Indicates that a new Bluetooth low energy scan has started.
+com.android.server.am.BatteryStatsService,noteBleScanStopped| Indicates that an ongoing Bluetooth low energy scan has stopped.
+com.android.server.am.BatteryStatsService,noteBluetoothControllerActivity| Indicates Bluetooth controller activity.
+com.android.server.am.BatteryStatsService,noteChangeWakelockFromSource| Indicates change wake lock from source.
+com.android.server.am.BatteryStatsService,noteConnectivityChanged| Indicates connectivity changed.
+com.android.server.am.BatteryStatsService,noteDeviceIdleMode| Indicates device idle mode.
+com.android.server.am.BatteryStatsService,noteLongPartialWakelockFinish| Indicates long partial wake lock finish.
+com.android.server.am.BatteryStatsService,noteLongPartialWakelockStart| Indicates long partial wake lock start.
+com.android.server.am.BatteryStatsService,notePhoneState| The telephony stack updates the phone state.
+com.android.server.am.BatteryStatsService,noteResetBleScan| Indicates that Bluetooth low energy has been reset.
+com.android.server.am.BatteryStatsService,noteStartAudio| Indicates that audio was toggled on.
+com.android.server.am.BatteryStatsService,noteStartCamera| Indicates that camera was toggled on.
+com.android.server.am.BatteryStatsService,noteStartGps| Indicates that Global Positioning System (Gps) was toggled on.
+com.android.server.am.BatteryStatsService,noteStartSensor| Indicates that sensor was toggled on.
+com.android.server.am.BatteryStatsService,noteStartVideo| Indicates that video was toggled on.
+com.android.server.am.BatteryStatsService,noteStopAudio| Indicates that audio was toggled off.
+com.android.server.am.BatteryStatsService,noteStopCamera| Indicates that camera was toggled off.
+com.android.server.am.BatteryStatsService,noteStopGps| Indicates that Global Positioning System (Gps) was toggled off.
+com.android.server.am.BatteryStatsService,noteSyncFinish| Indicates that synchronization was toggled off.
+com.android.server.am.BatteryStatsService,noteSyncStart| Indicates that synchronization was toggled on.
+com.android.server.am.BatteryStatsService,noteWifiOff| Indicates that wifi was toggled off.
+com.android.server.am.BatteryStatsService,noteWifiOn| Indicates that wifi was toggled on.
+com.android.server.am.ProcessStatsService,getCurrentStats| Get current stats of the process
+com.android.server.am.ProcessStatsService,getStatsOverTime| Get stats of the process over time.
+com.android.server.appwidget.AppWidgetServiceImpl,getAppWidgetInfo| Get the available information about the app widget.
+com.android.server.appwidget.AppWidgetServiceImpl,getAppWidgetOptions| Update the extras for a given widget instance. The extras can be used to embed additional information about this widget to be accessed by the associated widget's AppWidgetProvider.
+com.android.server.appwidget.AppWidgetServiceImpl,getAppWidgetViews| Get the app widget view for the given widget.
+com.android.server.audio.AudioService,setMicrophoneMute| Sets the microphone mute on or off.
+com.android.server.audio.AudioService,startBluetoothSco| Start bluetooth synchronous connection-oriented audio connection.
+com.android.server.audio.AudioService,startBluetoothScoVirtualCall| Start bluetooth synchronous connection-oriented audio connection in virtual call mode.
+com.android.server.audio.AudioService,stopBluetoothSco| Stop bluetooth synchronous connection-oriented audio connection.
+com.android.server.connectivity.IpConnectivityMetrics$Impl,logEvent| Return the number of remaining available slots in buffer.
+com.android.server.connectivity.MetricsLoggerService$MetricsLoggerImpl,logEvent| Log a connectivity metrics event.
+com.android.server.connectivity.MetricsLoggerService$MetricsLoggerImpl,logEvents| Log connectivity metrics events.
+com.android.server.devicepolicy.DevicePolicyManagerService,getDeviceOwnerComponent| Return device owner set for a given user.
+com.android.server.devicepolicy.DevicePolicyManagerService,getDeviceOwnerName| Returns the name of the device owner.  It'll work for non-DO users too, but requires MANAGE_USERS.
+com.android.server.devicepolicy.DevicePolicyManagerService,getDeviceOwnerUserId| Get the user id of the device owner.
+com.android.server.devicepolicy.DevicePolicyManagerService,getProfileOwnerName| Return the human readable name of the profile owner.
+com.android.server.devicepolicy.DevicePolicyManagerService,getProfileWithMinimumFailedPasswordsForWipe| Returns the user that will be wiped first when too many failed attempts are made to unlock user. That user is either the same as userHandle or belongs to the same profile group.
+com.android.server.devicepolicy.DevicePolicyManagerService,getUserProvisioningState| Return the provisioning state for the current user.
+com.android.server.devicepolicy.DevicePolicyManagerService,getUserRestrictions| Called by a profile or device owner to get user restrictions set.
+com.android.server.devicepolicy.DevicePolicyManagerService,getWifiMacAddress| Called by device owner, or profile owner on organization-owned device, to get the Media Access Control (MAC) address of the Wi-Fi device.
+com.android.server.devicepolicy.DevicePolicyManagerService,retrievePreRebootSecurityLogs| Called by device owner or profile owner of an organization-owned managed profile to retrieve device logs from before the device's last reboot.
+com.android.server.devicepolicy.DevicePolicyManagerService,retrieveSecurityLogs | Called by device owner or profile owner of an organization-owned managed profile to retrieve all new security logging entries since the last call to this API after device boots.
+com.android.server.devicepolicy.DevicePolicyManagerService,setAccountManagementDisabled| Called by a device owner or profile owner to disable account management for a specific type of account.
+com.android.server.devicepolicy.DevicePolicyManagerService,setActivePasswordState| Notify Device Policy Manager Service (DPMS) regarding the metric of the current password. This happens when the user changes the password, but also when the user just unlocks the keyguard.
+com.android.server.display.DisplayManagerService$BinderService,renameWifiDisplay| Renames a Wifi display.
+com.android.server.display.DisplayManagerService$BinderService,resumeWifiDisplay| Resumes a Wifi display.
+com.android.server.display.DisplayManagerService$BinderService,startWifiDisplayScan| Starts scanning for available Wifi displays.
+com.android.server.fingerprint.FingerprintService$FingerprintServiceWrapper,isHardwareDetected| Determine if fingerprint hardware is present and functional.
+com.android.server.hdmi.HdmiControlService$BinderService,getActiveSource| Return the active source information.
+com.android.server.hdmi.HdmiControlService$BinderService,getDeviceList| Return a list of High-Definition Multimedia Interface (Hdmi) Device information of the connected Consumer Electronics Control (CEC) devices on the Consumer Electronics Control (CEC) bus.
+com.android.server.hdmi.HdmiControlService$BinderService,getInputDevices| Get all input devices in the system.
+com.android.server.hdmi.HdmiControlService$BinderService,getPortInfo| Get the list of the High-Definition Multimedia Interface (HDMI) input port configuration.
+com.android.server.hdmi.HdmiControlService$BinderService,getSupportedTypes| Get supported types of local devices.
+com.android.server.hdmi.HdmiControlService$BinderService,getSystemAudioMode| Get whether the system is in system audio mode.
+com.android.server.pm.PackageManagerService,getApplicationInfo| Retrieve all of the information we know about a particular package/application.
+com.android.server.pm.PackageManagerService,getInstalledPackages| Return a List of all packages that are installed for the current user.
+com.android.server.pm.PackageManagerService,getLastChosenActivity| Get the last chosen activity.
+com.android.server.pm.PackageManagerService,setDefaultBrowserPackageName| Set the default Browser package name for a specific user.
+com.android.server.tv.TvInputManagerService$BinderService,getAvailableTvStreamConfigList| Returns the Tv Stream Configuration (TvStreamConfig) list of the given TV input.
+com.android.server.tv.TvInputManagerService$BinderService,getDvbDeviceList| Returns the list of currently available Digital video broadcasting (DVB) frontend devices on the system.
+com.android.server.tv.TvInputManagerService$BinderService,getHardwareList| Returns a list of TvInputHardwareInfo objects representing available hardware.
+com.android.server.usage.UsageStatsService$BinderService,queryConfigurationStats| Query configuration stats called by the binder stub.
+com.android.server.usage.UsageStatsService$BinderService,queryEvents| Query events called by the binder stub.
+com.android.server.usage.UsageStatsService$BinderService,queryUsageStats| Query usage stats called by the binder stub.
+com.android.server.usb.UsbService,getPortStatus| Get the status of the specified USB port.
+com.android.server.usb.UsbService,getPorts| Get the lists of USB ports.
+com.android.server.wifi.WifiServiceImpl,getAggressiveHandover| Get the WiFi Handover aggressiveness. This is used by settings to decide what to show within the picker.
+com.android.server.wifi.WifiServiceImpl,getAllowScansWithTraffic| Get setting for allowing Scans when traffic is ongoing.
+com.android.server.wifi.WifiServiceImpl,getConfigFile| Get the IP and proxy configuration file.
+com.android.server.wifi.WifiServiceImpl,getConfiguredNetworks| Get the list of configured networks.
+com.android.server.wifi.WifiServiceImpl,getConnectionInfo| Return dynamic information about the current Wi-Fi connection, if any is active.
+com.android.server.wifi.WifiServiceImpl,getConnectionStatistics| Return the Wifi Connection statistics object.
+com.android.server.wifi.WifiServiceImpl,getCountryCode| Get the country code as resolved by the Wi-Fi framework. The Wi-Fi framework uses multiple sources to resolve a country code.
+com.android.server.wifi.WifiServiceImpl,getCurrentNetwork| Get Network object of current wifi network, or null if not connected.
+com.android.server.wifi.WifiServiceImpl,getDhcpInfo| Return the Dynamic Host Configuration Protocol DHCP-assigned addresses from the last successful Dynamic Host Configuration Protocol (DHCP) request.
+com.android.server.wifi.WifiServiceImpl,getEnableAutoJoinWhenAssociated| Get setting for Framework layer automatic join status.
+com.android.server.wifi.WifiServiceImpl,getFrequencyBand| Get the operational frequency band.
+com.android.server.wifi.WifiServiceImpl,getMatchingWifiConfig| Returns a Wifi configuration matching this ScanResult.
+com.android.server.wifi.WifiServiceImpl,getPrivilegedConfiguredNetworks| Get the list of privileged configured networks.
+com.android.server.wifi.WifiServiceImpl,getScanResults| Return the results of the most recent access point scan, in the form of a list of scan result objects.
+com.android.server.wifi.WifiServiceImpl,getSupportedFeatures| Get the supported features.
+com.android.server.wifi.WifiServiceImpl,getVerboseLoggingLevel| Get the current level of WiFi verbose logging.
+com.android.server.wifi.WifiServiceImpl,getWifiApConfiguration| Get soft access point configuration.
+com.android.server.wifi.WifiServiceImpl,getWifiApEnabledState| Get wifi access point enabled state.
+com.android.server.wifi.WifiServiceImpl,getWifiEnabledState| Get wifi enabled state.
+com.android.server.wifi.WifiServiceImpl,getWifiServiceMessenger| Get a reference to handler. This is used by a client to establish an AsyncChannel communication with WifiService.
+com.android.server.wifi.WifiServiceImpl,getWpsNfcConfigurationToken| Retrieves a WPS-NFC configuration token for this network.
