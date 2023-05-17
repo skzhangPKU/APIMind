@@ -20,10 +20,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Installation
 ---
-1. Clone the APIMind GitHub repository to your local machine.
-   ```sh
-   git clone https://github.com/skzhangPKU/APIMind.git
-   ```
+1. Download the APIMind GitHub repository to your local machine.
 2. Install required dependencies by running the following command:
    ```sh
    pip install -r requirements.txt
