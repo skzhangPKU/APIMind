@@ -25,7 +25,7 @@ These instructions will get you a copy of the project up and running on your loc
    ```sh
    pip install -r requirements.txt
    ```
-3. Download the pre-trained weight models, Frida, and Standford NLP Parser from [Google Drive](https://drive.google.com/drive/folders/1FrDyUGGBHNazm8rrT5ZFW3nj_iLYQNDA?usp=sharing) and place them in the corresponding directories in the project. **Please note that if you are using an emulator or another rooted device, instead of a Google Pixel 5 device, it is necessary to download the appropriate version of Frida**. Otherwise, the project will not launch successfully.
+3. **Please note that if you are using an emulator or another rooted device, instead of a Google Pixel 5 device, it is necessary to download the appropriate version of Frida**. Otherwise, the project will not launch successfully.
 
 ## Usage
 1. Connect your rooted Google Pixel 5 mobile device to your local machine and enable USB debugging.
